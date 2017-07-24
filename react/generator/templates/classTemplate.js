@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 
 class ${name} extends Component {
 	static defaultProps: Object;
-	static propTypes: Object;
 	
 	state = {};
  

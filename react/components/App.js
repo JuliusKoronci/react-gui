@@ -11,6 +11,8 @@ import Form from './Form';
 
 const shell = require('electron').shell;
 
+import { getRootPath } from '../utils/pathHelper';
+
 class App extends Component {
 
   state = generatorState();
@@ -36,6 +38,8 @@ class App extends Component {
 
   render() {
     const { toggled, toggle } = this.props;
+
+    getRootPath();
     return (
       <div style={{ padding: '10px' }}>
         <Navbar inverse collapseOnSelect>
